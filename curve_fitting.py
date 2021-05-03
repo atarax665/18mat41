@@ -134,28 +134,29 @@ def display():
 
 # Driver Code
 if __name__ == "__main__":
-print('Choose the equation to fit: 1. a + b.x + c.x^2   2. a.x^2 + b.x + c  3. y = ax + b  4. y = a.x^b')
-ch = int(input('Enter the type of eqn (1/2/3/4) :'))
-x_values = [float(x) for x in input("Enter the values of x: ").split()]
-y_values = [float(x) for x in input("Enter the values of y: ").split()]
-table_values = {   'x': sumx_or_y(x_values),
+    print('Choose the equation to fit: 1. a + b.x + c.x^2   2. a.x^2 + b.x + c  3. y = ax + b  4. y = a.x^b')
+    ch = int(input('Enter the type of eqn (1/2/3/4) :'))
+    x_values = [float(x) for x in input("Enter the values of x: ").split()]
+    y_values = [float(x) for x in input("Enter the values of y: ").split()]
+    table_values = {   'x': sumx_or_y(x_values),
                     'y': sumx_or_y(y_values), 
                     'xy': sumxy(x_values, y_values), 
                     'x^2.y': sumx2y(x_values, y_values),
                     'x^2' : sumx2(x_values),
                     'x^3' : sumx3(x_values),
                     'x^4' : sumx4(x_values)
-}
-if ch == 1:
-    display_all()
-    abxcx2()
-elif ch == 2:
-    display_all()
-    ax2bxc()
-elif ch == 3:
-    display()
-    st_line()
-elif ch == 4:
-    axb()
-else:
-    print('Invalid Choice')
+                    }
+    if ch == 1:
+        display_all()
+        abxcx2()
+    elif ch == 2:
+        display_all()
+        ax2bxc()
+    elif ch == 3:
+        display()
+        st_line()
+    elif ch == 4:
+        axb()
+    else:
+        print('Invalid Choice')
+        
