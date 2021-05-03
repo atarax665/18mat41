@@ -12,6 +12,6 @@ Hey, are you also bored doing all that calculation to give answers in the online
 
 ### Module 4
 
-- Fitting of a second degree parabola
+- [Curve Fitting](curve_fitting.py)
 
 ### Module 5
